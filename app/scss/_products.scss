@@ -1,0 +1,17 @@
+.products {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 56px;
+  }
+  &__text {
+    max-width: 440px;
+
+    p {
+      margin-bottom: 30px;
+    }
+  }
+  &__slider {
+    max-width: 560px;
+  }
+}
