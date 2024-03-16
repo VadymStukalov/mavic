@@ -1,0 +1,122 @@
+.page-section {
+}
+.benefits {
+  &__items {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 38px;
+  }
+
+  &__item {
+    margin-bottom: 94px;
+    display: flex;
+    align-items: flex-end;
+
+    &:nth-child(even) {
+      padding-top: 15px;
+      padding-left: 43px;
+      transform: translateY(27px);
+    }
+    &:nth-child(4) {
+      padding-top: 15px;
+      padding-left: 81px;
+      transform: translateY(27px);
+    }
+  }
+  &__item-1 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 245px;
+      height: 47px;
+      right: -63px;
+      top: 50px;
+      background-image: url(../images/line-1.svg);
+    }
+  }
+  &__item-3 {
+    position: relative;
+    transform: translateX(34px);
+    &::after {
+      content: "";
+      position: absolute;
+      width: 254px;
+      height: 40px;
+      right: -69px;
+      top: 64px;
+      background-image: url(../images/line-3.svg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 463px;
+      height: 63px;
+      right: -28px;
+      top: -67px;
+
+      background-image: url(../images/line-2.svg);
+    }
+  }
+
+  &__num {
+    font-size: 36px;
+    line-height: 41px;
+    @extend %ubuntu-bold;
+    margin-right: 10px;
+  }
+  &__img {
+    position: relative;
+    margin-right: 32px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      top: -12px;
+      right: -12px;
+      z-index: -1;
+    }
+  }
+  &__info {
+    width: 300px;
+  }
+  &__info-title {
+    width: 123px;
+    font-size: 21px;
+    line-height: 24px;
+    @extend %ubuntu-bold;
+    margin-bottom: 10px;
+  }
+  &__info-text {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+.page-section__wrapper {
+}
+.container {
+}
+.title {
+}
+.benefits__items {
+}
+.benefit__item {
+}
+.benefits__num {
+}
+.benefits__img {
+}
+.benefits__info {
+}
+.benefits__info-title {
+}
+.benefits__info-text {
+}
+.benefits__item {
+}
+.scroll__btn {
+}
