@@ -11,4 +11,10 @@ $(function () {
     $(".question__item").removeClass("question__item--active");
     $(this).parent().addClass("question__item--active");
   });
+  $("#fullpage").fullpage({
+    autoScrolling: true,
+    scrollHorizontally: true,
+    sectionSelector: ".page-section",
+    controlArrows: true,
+  });
 });
