@@ -15,6 +15,33 @@ $(function () {
     autoScrolling: true,
     scrollHorizontally: true,
     sectionSelector: ".page-section",
-    controlArrows: true,
+    scrollOverflow: true,
+
+    // normalScrollElements: "#benefits, .specification",
+    // scrollOverflowMacStyle: true,
+    // scrollBar: true,
+    anchors: [
+      "top",
+      "products",
+      "benefits",
+      "specification",
+      "questionss",
+      "contacts",
+    ],
+    menu: "#header__nav",
+  });
+
+  if ($(window).width() < 1101) {
+    $(".header__phone").appendTo(".menu__list");
+  }
+
+  $(".menu__btn").on("click", function () {
+    $(".menu__btn").toggleClass("menu__btn--active");
+    $(".menu__list").toggleClass("menu__list--active");
+  });
+
+  $(".menu__list-link").on("click", function () {
+    $(".menu__btn").toggleClass("menu__btn--active");
+    $(".menu__list").removeClass("menu__list--active");
   });
 });
