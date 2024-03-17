@@ -1,0 +1,74 @@
+.specification {
+  &__item--center {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+  }
+  &__item {
+  }
+  &__box {
+    max-width: 280px;
+    position: relative;
+    margin-top: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__box-2 {
+    margin-top: 140px;
+  }
+
+  &__box-4 {
+    margin-top: 160px;
+  }
+
+  &__box-1::before {
+    background-image: url(../images/pointer-1.svg);
+    width: 229px;
+    height: 116px;
+    right: -140px;
+    top: 16px;
+  }
+  &__box-2::before {
+    background-image: url(../images/pointer-2.svg);
+    width: 346px;
+    height: 81px;
+    right: -326px;
+    top: -65px;
+  }
+  &__box-3::before {
+    background-image: url(../images/pointer-3.svg);
+    width: 560px;
+    height: 116px;
+    left: -293px;
+    top: 14px;
+  }
+  &__box-4::before {
+    background-image: url(../images/pointer-4.svg);
+    width: 124px;
+    height: 89px;
+    left: -133px;
+    top: -73px;
+  }
+
+  &__box-title {
+    font-size: 21px;
+    line-height: 28px;
+    @extend %ubuntu-bold;
+    margin-bottom: 10px;
+  }
+  &__box-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
