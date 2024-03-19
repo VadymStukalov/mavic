@@ -1,7 +1,115 @@
-@media (max-width: 1366 px) {
+@media (max-width: 1366px) {
+  .title {
+    padding-top: 90px;
+  }
+  .products__slider-box {
+    padding-top: 0;
+  }
+  .products__slider-text {
+    left: auto;
+    bottom: auto;
+    right: 0px;
+    top: -85px;
+  }
+  .benefits {
+    .title {
+      padding-top: 10px;
+    }
+    &__item {
+      margin-bottom: 80px;
+    }
+  }
+  .specification__box-2 {
+    margin-top: 115px;
+  }
+  .specification__box-4 {
+    margin-top: 115px;
+  }
+  .specification__item--center {
+    text-align: center;
+    margin-top: -40px;
+    img {
+      width: 80%;
+    }
+  }
+
+  .specification {
+    .title {
+      padding-top: 40px;
+    }
+  }
+  .questions {
+    .title {
+      padding-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .question__item-title {
+    line-height: 22px;
+    font-size: 18px;
+    padding: 16px 10px 16px 30px;
+  }
+  .question__item-text {
+    padding: 0 5px 40px 30px;
+  }
+  .question__item-title::after {
+    width: 60px;
+    height: 53px;
+    right: -61px;
+  }
+  .question__items {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .benefits__item {
+    width: 45%;
+  }
+  .benefits__item:last-child {
+    width: 45%;
+    padding-left: 38px;
+  }
+  .benefits__item:first-child::after {
+    width: 45%;
+  }
+  .benefits__item:nth-child(3):after {
+    width: 35%;
+  }
+  .benefits__item:nth-child(3)::before {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .specification__box-3::before {
+    width: 259px;
+    height: 116px;
+    left: -269px;
+    top: 14px;
+  }
+}
+@media (max-width: 1180px) {
+  .specification__box-3::before {
+    width: 243px;
+    height: 116px;
+    left: -244px;
+    top: 14px;
+  }
+  .specification__box-2::before {
+    width: 346px;
+    height: 81px;
+    right: -284px;
+    top: -65px;
+  }
 }
 
 @media (max-width: 1100px) {
+  .header {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 23px 0 6px;
+    top: 0;
+  }
   .header__phone {
     display: none;
   }
@@ -71,6 +179,159 @@
       right: 0;
     }
   }
+  // .products__text {
+  //   padding-right: 15px;
+  // }
+  // .products__slider-box {
+  //   padding-right: 15px;
+  // }
+  // .benefits__item:last-child {
+  //   width: 45%;
+  //   padding-left: 38px;
+  // }
+  .benefits__item:first-child::after,
+  .benefits__item:nth-child(3):after,
+  .benefits__item:nth-child(3)::before {
+    display: none;
+  }
+  .benefits__items {
+    display: block;
+  }
+  .benefits__item {
+    // width: 100%;
+  }
+  .benefits__item:nth-child(even) {
+    margin-left: 0px;
+    padding-left: 160px;
+  }
+  .benefits__item:last-child {
+    width: 100%;
+  }
+  .benefits__info {
+    width: 40%;
+  }
+  .benefits__item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .benefits__item:nth-child(even) {
+    margin-left: 43px;
+    transform: translateY(0px);
+  }
+  .specification__box-2::before {
+    width: 300px;
+    height: 74px;
+    right: -260px;
+    top: -56px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    padding-top: 50px;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+  .products__slider-box {
+  }
+  .products__slider-text {
+    font-size: 20px;
+    line-height: 22px;
+    top: -68px;
+  }
+
+  .specification__box-1::before,
+  .specification__box-2::before,
+  .specification__box-3::before,
+  .specification__box-4::before {
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .products__inner {
+    display: block;
+  }
+  .products__text {
+    padding-right: 0;
+    min-width: 100%;
+    margin-bottom: 140px;
+  }
+  .products__slider {
+    margin-left: auto;
+  }
+  .products__slider-box {
+    margin-bottom: 80px;
+  }
+  .contacts__form {
+    width: 100%;
+    margin-right: 0;
+    order: 1;
+  }
+  .contacts__inner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 887px) {
+  .specification__box-4,
+  .specification__box-2 {
+    margin-top: 50px;
+  }
+  .specification__box {
+    width: 280px;
+  }
+  .specification__inner {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 787px) {
+  .benefits__item:nth-child(even) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .benefits__item:nth-child(3) {
+    padding-left: 0px;
+  }
+  .benefits__info {
+    width: 50%;
+  }
+  .specification__inner {
+    flex-direction: column;
+  }
+  .specification__item:first-child,
+  .specification__item:last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .specification__box-4,
+  .specification__box-2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+  .specification__box {
+    margin-top: 0;
+    width: 350px;
+  }
+  .specification__item--center {
+    padding: 20px 0;
+  }
+
+  .question__items {
+    padding-right: 60px;
+    // max-width: 490px;
+  }
+  .question__item-text {
+    padding: 0 15px 40px 30px;
+  }
+  .contacts__inner {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 765px) {
@@ -91,6 +352,89 @@
   }
 }
 
+@media (max-width: 680px) {
+  .products__inner {
+    padding-left: 0;
+  }
+  .title {
+    padding-left: 0;
+    padding-top: 40px;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  .products__text p {
+    margin-bottom: 20px;
+  }
+  .products__slider {
+    max-width: 100%;
+  }
+  .products__text {
+    margin-bottom: 100px;
+  }
+  .products__slider-box {
+    margin-bottom: 60px;
+  }
+  .products__slider-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .specification__inner {
+    align-items: flex-start;
+  }
+  .specification__item:first-child,
+  .specification__item:last-child {
+    display: block;
+
+    margin-bottom: 10px;
+  }
+  .specification__box-1,
+  .specification__box-3 {
+    margin-bottom: 10px;
+  }
+  .specification__box-4,
+  .specification__box-2 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+  }
+  .specification__box {
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 540px) {
+  .scroll__btn {
+    padding: 13px 0;
+  }
+  .benefits__num {
+    display: none;
+  }
+  .benefits__item {
+    display: block;
+    text-align: right;
+  }
+  .benefits__info {
+    text-align-last: left;
+  }
+  .benefits__info-title {
+    text-align: left;
+  }
+  .benefits__info-text {
+    text-align: left;
+  }
+  .benefits__img {
+    display: inline-block;
+  }
+  .benefits__items {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 450px) {
   .top {
     &__title {
@@ -106,6 +450,46 @@
     &__title {
       font-size: 46px;
     }
+  }
+}
+
+@media (max-width: 420px) {
+  .benefits__info {
+    width: 100%;
+  }
+  .benefits__item {
+    // text-align: left;
+  }
+  .benefits__info-title {
+    padding-top: 5px;
+  }
+}
+
+@media (max-width: 414px) {
+  .question__item-title::after {
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .question__items {
+    padding-right: 0;
+  }
+  .question__item-title {
+    padding: 15px 75px 15px 15px;
+  }
+  .contacts__form-line {
+    flex-wrap: wrap;
+  }
+  .contacts__form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .contacts__social-list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
